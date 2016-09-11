@@ -40,6 +40,6 @@ app.get('/:date', function(req,res){
     res.send(dateConverter.buildJSONDate(date));
 });
 
-app.listen(8080,function(){
-   console.log("Listening on 8080"); 
+app.listen(3000,function(){
+  console.log("Listening on 3000"); 
 });
