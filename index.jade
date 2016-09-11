@@ -1,0 +1,38 @@
+doctype html
+html(lang='en')
+  head
+    title Timestamp Microservice
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', rel='stylesheet', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa', crossorigin='anonymous')
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Source+Sans+Pro', rel='stylesheet')
+    style.
+      body{
+      font-family: 'Open Sans Condensed', sans-serif;
+      background-color: #00796B;
+      color: white;
+      }
+  
+        li{
+      margin-top:2%;
+      margin-bottom:2%;
+      }
+      .well{
+          color: black;
+          font-family: 'Source Sans Pro', sans-serif;
+          box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+      }
+  body
+    h1.text-center Timestamp Microservice API
+    #container.container.well
+      p You can request:
+      p
+        ul
+          li
+            | A timestamp. Ex: https://api-project-codecamp-1-juanf03.c9users.io:8080/1433894400
+          li
+            | A date in friendly format. Ex: https://api-project-codecamp-1-juanf03.c9users.io:8080/June 10,2015 (or June%2010,%202015)
+          li If the url doesn't contain any of the former format it will returl null
+      p
+        | For both the timestamp and the friendly date format the result will be a json containing an object like:
+      b {"unix": 1433894400 ,"natural": "June 10, 2015"}
