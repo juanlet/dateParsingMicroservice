@@ -40,6 +40,4 @@ app.get('/:date', function(req,res){
     res.send(dateConverter.buildJSONDate(date));
 });
 
-app.listen(3000,function(){
-  console.log("Listening on 3000"); 
-});
+app..listen(process.env.PORT || 5000);
