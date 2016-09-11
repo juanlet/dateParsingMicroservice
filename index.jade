@@ -29,9 +29,13 @@ html(lang='en')
       p
         ul
           li
-            | A timestamp. Ex: https://timestampservicefcc.herokuapp.com/1433894400
+            | A timestamp. Ex: 
+            a(href='https://timestampservicefcc.herokuapp.com/1433894400', target='_blank') https://timestampservicefcc.herokuapp.com/1433894400
+            
           li
-            | A date in friendly format. Ex: https://timestampservicefcc.herokuapp.com/June 10,2015 (or June%2010,%202015)
+            | A date in friendly format. Ex: 
+            a(href='https://timestampservicefcc.herokuapp.com/June 10,2015', target='_blank') https://timestampservicefcc.herokuapp.com/June 10,2015
+            |(or June%2010,%202015)
           li If the url doesn't contain any of the former format it will returl null
       p
         | For both the timestamp and the friendly date format the result will be a json containing an object like:
