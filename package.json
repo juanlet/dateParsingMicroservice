@@ -1,12 +1,16 @@
 {
   "name": "timestamp",
   "version": "1.0.0",
+  "engines":{
+    "node": "6.0.0",
+    "npm":"3.8.6"
+  },
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.2",
